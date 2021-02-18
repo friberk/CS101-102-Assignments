@@ -81,7 +81,7 @@ Create another project and try the following tasks:
 			while ( d != 1.0 )
 			{
 			   System.out.println( d);
-		       d = d + 0.1;
+		           d = d + 0.1;
 			}
 			System.out.println( d + " <- final value after loop!");
     ```
