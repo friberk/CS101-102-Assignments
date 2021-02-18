@@ -92,7 +92,7 @@ Add " throws FileNotFoundException" to the end of the main method definition lin
 ```java
             public static void main( String[] args) throws FileNotFoundException
 ```
-Immediately following the "``Scanner scan = new Scanner( System.in);``" statement, add the command
+Immediately following the ``Scanner scan = new Scanner( System.in);`` statement, add the command
 
 ```java
             PrintStream originalStdOut = System.out;
