@@ -114,7 +114,7 @@ Notice that each cell's contents are aligned to the right of a 6 character wide 
 ***3,1***3,2***3,3***3,4
 ```
 
-When the number of characters needed to output the "row,col" numbers increases, the number of spaces/stars can be reduced accordingly, such that the columns still look neatly aligned to the right (assuming every character has the same width!) For example, "5,12" has 4 characters and would thus require only 2 additional stars `~"\*\*5,12"~` to give 6 characters overall, while "10,12" has 5 characters and would require only 1 extra `~"\*10,12"~`.
+When the number of characters needed to output the "row,col" numbers increases, the number of spaces/stars can be reduced accordingly, such that the columns still look neatly aligned to the right (assuming every character has the same width!) For example, "5,12" has 4 characters and would thus require only 2 additional stars ~"**5,12"~ to give 6 characters overall, while "10,12" has 5 characters and would require only 1 extra `~"*10,12"~`.
 
 Rather than rely on tabs or using Java's built-in printf / formatting features for such spacing, try doing it yourself. _Hint:_ construct a String that has the "_row,col_" values for the current cell, then, in a loop, add space characters to the String, so as to align it appropriately within the desired column width, before finally outputting the String and starting again with the following cell.
 
