@@ -2,21 +2,17 @@
 
 ## Lab 01
 
-* * *
-
-**Lab Objectives:** ​Arrays
-
-* * *
+### **Lab Objectives:** Arrays
 
 Notes:
-* For all labs in CS 102, your solutions must conform to these ​[CS101/102 style
-guidelines​](http://www.cs.bilkent.edu.tr/~adayanik/cs101/practicalwork/styleguidelines.htm).
+* For all labs in CS 102, your solutions must conform to these [CS101/102 style
+guidelines](http://www.cs.bilkent.edu.tr/~adayanik/cs101/practicalwork/styleguidelines.htm).
 * Create a Java Project named Lab01. Put all of your classes in this project.
-* Remember to include ​ **javadoc comments** ​ for each class and method.
-* Upload your solution ​ **as a single .zip file** ​ to the Lab01 assignment for your section by the end of your section’s lab session on the week of February 8. You must use the following naming convention: Lab01_Surname_FirstName.zip where Surname is your family name and FirstName is your first name. You may upload multiple times; the last upload will be considered.
+* Remember to include **javadoc comments** for each class and method.
+* Upload your solution **as a single .zip file** to the Lab01 assignment for your section by the end of your section’s lab session on the week of February 8. You must use the following naming convention: Lab01_Surname_FirstName.zip where Surname is your family name and FirstName is your first name. You may upload multiple times; the last upload will be considered.
 
-**Question** ​In this lab, you are going to implement a ​ **Polynomial** class ​that represents
-polynomials of the form ``P(x) = c​0 ​ + c​1​x + c​2x​^2 ​+ ... + c​n​x^​n``
+**Question** In this lab, you are going to implement a **Polynomial** class that represents
+polynomials of the form ``P(x) = c0 + c1x + c2x^2 + ... + cnx^n``
 The class should do the following:
 
 1. ``Polynomial`` class should contain its coefficients in an array. Use double type for
@@ -40,7 +36,7 @@ The class should do the following:
     For instance, for the polynomial ​``P(x) = 4 – 5x​^2 + 2x​^3 ​, ​toString()`` method
     should return ​“``4.0 - 5.0x^2 + 2.0x^3``”.
 
-7. Add ​ **eval( double x )** ​ method that evaluates the polynomial at ​x ​and returns
+7. Add ​ **eval( double x )** method that evaluates the polynomial at ​x ​and returns
     the result.
     
     1. Use ​``Math.pow( double a, double b )``​ method to evaluate each term individually and the polynomial as a sum of the terms.
