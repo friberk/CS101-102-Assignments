@@ -9,11 +9,11 @@ Implementing Java programs is relatively simple; this lab should help you get up
 
 ### Getting started
 
-_Read and carefully follow_ the instructions below, _in sequence_ !
+_Read and carefully follow_ the instructions below, _in sequence_!
 
 *   **First,** [follow these instructions](http://web.archive.org/web/20191227213603/http://www.cs.bilkent.edu.tr/%7Edavid/cs101/practicalwork/Using-DrJava/index.html) to make sure you have the Java Development Kit (JDK) installed, together with a suitable Integrated Development Environment (IDE). For CS101, we will use the DrJava IDE, which is free, open-source & cross-platform; it's actually written in Java! Be sure to configure DrJava as noted in the instructions before moving on.
 *   **Next,** [follow these instructions](http://web.archive.org/web/20191227213603/http://www.cs.bilkent.edu.tr/%7Edavid/cs101/practicalwork/Using-DrJava/UsingDrJava.doc) to learn how to use your IDE in a relatively organised and professional way. This exercise includes projects Lab02a and Lab02b.
-*   **Finally,** _after completing the previous two steps_ , do projects Lab02c, Lab02d & Lab02e [below](#Some_simple_problems) .  
+*   **Finally,** _after completing the previous two steps_ , do projects Lab02c, Lab02d & Lab02e [below](#some-simple-problems).  
     Note:
     *   In DrJava your workspace is the lab02 folder. Each project in the workspace is placed in its own sub-folder, i.e. project Lab02c is in a folder called lab02c inside lab02.
     *   Only one project is active at a time. In DrJava, to compile/run a different project, select it from the list in the Project menu (or explicitly open it from there).
@@ -79,7 +79,7 @@ The basic syntax for an **assignment** statement is:
             /**
              * ___program description___
              * @author ___your name___
-			 * @version ___date___
+	     * @version ___date___
              */ 
             public class XXXX
             {
@@ -102,7 +102,7 @@ _where_ **XXXX** _is the name you give to your program (and the file containing 
 
 * * *
 
-### Some simple problems ...
+### Some simple problems...
 
 **(c)** Create a new project Lab02c and write a program that reads two int values from the user, computes their sum, difference, product, the result of dividing them, and the remainder after such division, then prints out the resulting values. Experiment a bit. Try changing the value of a constant. Try putting an int value into a double variable and vice versa. What happens if one or both of the values are zero or negative? What happens if the values are very large, close to their maximum possible values? What happens if you change the types of all the variables to double? Try computing the maximum and minimum of the two values using the Math.max & Math.min functions.
 
