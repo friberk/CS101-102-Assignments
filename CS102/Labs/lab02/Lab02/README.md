@@ -29,7 +29,6 @@ operations are:
 
 * **compose( Polynomial p2 )**  **:** Returns the composition of this polynomial with p2.
 
-
 For polynomials P(x) and Q(x), the result of composition (P(Q(x))) is:
 
 ``P(x) = 3 + 4x + 1x^2``   
