@@ -9,7 +9,7 @@ Implementing Java programs is relatively simple; this lab should help you get up
 
 ### Getting started
 
-_Read and carefully follow_ the instructions below, _in sequence_ !
+_Read and carefully follow_ the instructions below, _in sequence_!
 
 *   **First,** [follow these instructions](http://web.archive.org/web/20191227213603/http://www.cs.bilkent.edu.tr/%7Edavid/cs101/practicalwork/Using-DrJava/index.html) to make sure you have the Java Development Kit (JDK) installed, together with a suitable Integrated Development Environment (IDE). For CS101, we will use the DrJava IDE, which is free, open-source & cross-platform; it's actually written in Java! Be sure to configure DrJava as noted in the instructions before moving on.
 *   **Next,** [follow these instructions](http://web.archive.org/web/20191227213603/http://www.cs.bilkent.edu.tr/%7Edavid/cs101/practicalwork/Using-DrJava/UsingDrJava.doc) to learn how to use your IDE in a relatively organised and professional way. This exercise includes projects Lab02a and Lab02b.
