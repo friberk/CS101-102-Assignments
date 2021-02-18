@@ -17,34 +17,34 @@ The class should do the following:
 
 1. ``Polynomial`` class should contain its coefficients in an array. Use double type for
     coefficients.
-2. Include a constructor that takes an integer, ​``d​``, and a double, ​``c``​, to construct
-    polynomials of the form ​``P(x) = cx^d``.  
+2. Include a constructor that takes an integer, ``d``, and a double, ``c``, to construct
+    polynomials of the form ``P(x) = cx^d``.  
     
-    Include a default constructor that takes no argument and constructs a zero polynomial (​``P(x) = 0``​).
+    Include a default constructor that takes no argument and constructs a zero polynomial (``P(x) = 0``).
 
 3. Include another constructor that takes an array of coefficients and produces a
     polynomial with these coefficients.
 4. Add a getter method for a coefficient which takes degree and returns the coefficient
     of the term with that degree.
-5. Include ​ **getDegree()** ​ method that returns the degree of the polynomial. Degree of a
+5. Include  **getDegree()**  method that returns the degree of the polynomial. Degree of a
     polynomial is the degree of highest non-zero term in a polynomial. For example, the
-    degree of polynomial ​``P(x) = 4 - 5x​^2 ​ + 12x​^3` ​ is 3. You can assume that the
+    degree of polynomial ``P(x) = 4 - 5x^2  + 12x^3`  is 3. You can assume that the
     degree of zero polynomial is 0.
-6. Add ​ **toString()** ​ ​method that returns ​``String​`` representation of the polynomial.
+6. Add  **toString()**  method that returns ``String`` representation of the polynomial.
     Zero terms in the polynomial should not be included in the string.
 
-    For instance, for the polynomial ​``P(x) = 4 – 5x​^2 + 2x​^3 ​, ​toString()`` method
-    should return ​“``4.0 - 5.0x^2 + 2.0x^3``”.
+    For instance, for the polynomial ``P(x) = 4 – 5x^2 + 2x^3 , toString()`` method
+    should return “``4.0 - 5.0x^2 + 2.0x^3``”.
 
-7. Add ​ **eval( double x )** method that evaluates the polynomial at ​x ​and returns
+7. Add  **eval( double x )** method that evaluates the polynomial at x and returns
     the result.
     
-    1. Use ​``Math.pow( double a, double b )``​ method to evaluate each term individually and the polynomial as a sum of the terms.
+    1. Use ``Math.pow( double a, double b )`` method to evaluate each term individually and the polynomial as a sum of the terms.
 
-    2. Implement another method, ​ **eval2( double x )** ​ that evaluates the
+    2. Implement another method,  **eval2( double x )**  that evaluates the
     polynomial using Horner’s method. Horner’s method is an efficient way of
-    evaluating polynomials at a given point. A polynomial ``​P(x) = c​0 ​ + c​1​x +
-    c​2​x​^2 ​ + ... + c​n​x^​n​`` can be evaluated at ​``x​0`` ​ by rearranging computation as
-    ``P(x​0​) = (( ... ( (c​n​) x​0 ​ + c​n-1​) x​0 ... + c​4 ​ ) x​0 ​ + c​3 ​) x​0 ​ + c​1 ​) x​0 + c​0`` ​ and computing the result from the innermost parentheses to outwards.
+    evaluating polynomials at a given point. A polynomial ``P(x) = c0  + c1x +
+    c2x^2  + ... + cnx^n`` can be evaluated at ``x0``  by rearranging computation as
+    ``P(x0) = (( ... ( (cn) x0  + cn-1) x0 ... + c4  ) x0  + c3 ) x0  + c1 ) x0 + c0``  and computing the result from the innermost parentheses to outwards.
 
-8. Implement a class called ​ **PolynomialTester** ​ to test your ​``Polynomial​`` class.
+8. Implement a class called  **PolynomialTester**  to test your ``Polynomial`` class.
