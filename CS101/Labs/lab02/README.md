@@ -79,7 +79,7 @@ The basic syntax for an **assignment** statement is:
             /**
              * ___program description___
              * @author ___your name___
-			 * @version ___date___
+	     * @version ___date___
              */ 
             public class XXXX
             {
