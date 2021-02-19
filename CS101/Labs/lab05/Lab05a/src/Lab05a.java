@@ -114,7 +114,7 @@ public class Lab05a
                     }
                 }
 
-                System.out.println ( "If you want to print another wall with a hole type \"Y\" or \"y\": " );
+                System.out.println( "If you want to print another wall with a hole type \"Y\" or \"y\": " );
                 System.out.print( "If you want to exit type anything else: " );
                 doItAgain = scan.next();
 
