@@ -28,7 +28,7 @@ public class Lab05d
         
         // Program Code
         System.out.println( "\nWelcome to Pi Calculator! " + "The real value of Pi is " + Math.PI );
-        System.out.println ( "\nIf you want to use a math series to compute pi " + "please type \"x\" " );
+        System.out.println( "\nIf you want to use a math series to compute pi " + "please type \"x\" " );
         System.out.println( "\nIf you want to compute the series to a specified accuracy " + "please type \"y\" \n" );
 
         userChoice = scan.next();
