@@ -68,7 +68,7 @@ public class Lab05a
                      * 3. and 8., 9., 10. rows.
                      */
                     while ( rows <= thickness || rows > height - thickness && rows <= height ) {
-                        for ( columns = 1; columns <= width; columns = columns + 1) {
+                        for ( columns = 1; columns <= width; columns = columns + 1 ) {
                             System.out.print( "*" );
                         }
                         
@@ -114,7 +114,7 @@ public class Lab05a
                     }
                 }
 
-                System.out.println ( "If you want to print another wall with a hole type \"Y\" or \"y\": " );
+                System.out.println( "If you want to print another wall with a hole type \"Y\" or \"y\": " );
                 System.out.print( "If you want to exit type anything else: " );
                 doItAgain = scan.next();
 
