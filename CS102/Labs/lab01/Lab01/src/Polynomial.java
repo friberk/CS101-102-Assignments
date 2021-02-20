@@ -8,7 +8,7 @@ public class Polynomial
     // Properties
     private double[] coefficient;
     private int degree;
-    
+
     // Constructors
     /**
      * Constructor for initializing single polynomial term.
@@ -18,7 +18,7 @@ public class Polynomial
     public Polynomial( double coefficient, int degree ) {
         if ( degree < 0 ) {
             System.out.println( "Degree of a polynomial term cannot be negative!" );
-        } // Since throwing exception is not allowed in CS101/2 yet, output this line instead. 
+        } // Since throwing exception is not allowed in CS101/2 yet, output this line instead.
 
         else {
             this.coefficient = new double[ degree + 1 ];
@@ -28,7 +28,7 @@ public class Polynomial
     }
 
     /**
-     * Default constructor initializes a zero polynomial with 
+     * Default constructor initializes a zero polynomial with
      * coefficient and degree = 0.
      */
     public Polynomial() {
@@ -54,22 +54,22 @@ public class Polynomial
     }
 
     // Methods
-    
+
     /**
      * Method for finding the degree of the given polynomial.
      * @return Degree of the polynomial.
      */
     public int getDegree(){
         int degree = 0;
-        
+
         for( int index = 0; index < this.coefficient.length; index = index + 1 )
             if( this.coefficient[ index ] != 0 ) {
                 degree = index;
             }
-        
+
         return degree;
     }
-    
+
     /**
      * This method gets the coefficient with the wanted degree.
      * @param degree is the value of the wanted degree.
@@ -93,13 +93,13 @@ public class Polynomial
      * @return String representation of the given polynomial.
      */
     @Override
-    public String toString() { 
+    public String toString() {
         String polynomialString;
         polynomialString = "";
 
         String sign;
         sign = "";
-        
+
         for ( int index = 0; index < this.coefficient.length; index = index + 1 ) {
             if ( this.coefficient[ index ] < 0 ) {
                 sign = "-";
@@ -108,22 +108,22 @@ public class Polynomial
             else {
                 sign = "+";
             }
-            
+
             // Do not represent the term with coefficient 0.
             if ( this.coefficient[ index ] != 0 ) {
                 if ( index == 0 ) {
                     polynomialString = polynomialString + this.coefficient[ 0 ] + "";
                 }
 
-                else if ( index == 1 ) { 
+                else if ( index == 1 ) {
                     polynomialString = polynomialString + " " + sign + " " + Math.abs( this.coefficient[ 1 ] ) + "x";
                 }
-                
+
                 else {
                     polynomialString = polynomialString + " " + sign + " " + Math.abs( this.coefficient[ index ] ) + "x^" + index;
                 }
             }
-            
+
             // Exceptional case for the zero polynomial.
             else if ( this.coefficient.length == 1 && this.coefficient[ 0 ] == 0 ) {
                 polynomialString = polynomialString + 0;
@@ -140,7 +140,7 @@ public class Polynomial
     public double eval( double x ) {
         double evaluation;
         evaluation = 0;
-        
+
         for ( int index = 0; index < this.coefficient.length; index = index + 1 ) {
             evaluation = evaluation + ( this.coefficient[ index ] * ( Math.pow( x, index ) ) );
         }
@@ -154,12 +154,12 @@ public class Polynomial
      * @return Evaluation result of the given terms which computed using Horner's method.
      */
     public double eval2( double x ) {
-        double evaluation = 0;   
-   
+        double evaluation = 0;
+
         for (int index = this.coefficient.length - 1; index >= 0; index = index - 1) {
             evaluation = ( evaluation * x ) + this.coefficient[ index ];
         }
 
-        return evaluation; 
+        return evaluation;
     }
 }

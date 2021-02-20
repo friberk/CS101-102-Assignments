@@ -16,7 +16,7 @@ public class PolynomialTester {
         p5Array = new double[]{ 3, 4, 1, 3, 0, 2 };
         p6Array = new double[]{ 2, 1 };
         p7Array = new double[]{ 3, 4, 1};
-        
+
         p1 = new Polynomial( 5, 3 );
         p2 = new Polynomial( p2Array );
         p3 = new Polynomial( p3Array );
@@ -73,7 +73,7 @@ public class PolynomialTester {
         System.out.println( "\nPolynomial Composition: " );
         System.out.println( "p2( p3(x) ) = " + p2.compose( p3 ) );
         System.out.println( "p5( p6(x) ) = " + p5.compose( p6 ) );
-        
+
         System.out.println( "\nPolynomial division: " );
         System.out.println( "(" + p3.toString() + ")" +" / " + "(" + p2.toString() + ")" + " = " );
         System.out.print( p3.div( p2 ) );

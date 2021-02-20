@@ -8,7 +8,7 @@ public class Polynomial
     // Properties
     private double[] coefficient;
     private int degree;
-    
+
     // Constructors
     /**
      * Constructor for initializing single polynomial term.
@@ -18,7 +18,7 @@ public class Polynomial
     public Polynomial( double coefficient, int degree ) {
         if ( degree < 0 ) {
             System.out.println( "Degree of a polynomial term cannot be negative!" );
-        } // Since throwing exception is not allowed in CS101/2 yet, output this line instead. 
+        } // Since throwing exception is not allowed in CS101/2 yet, output this line instead.
 
         else {
             this.coefficient = new double[ degree + 1 ];
@@ -28,7 +28,7 @@ public class Polynomial
     }
 
     /**
-     * Default constructor initializes a zero polynomial with 
+     * Default constructor initializes a zero polynomial with
      * coefficient and degree = 0.
      */
     public Polynomial() {
@@ -54,22 +54,22 @@ public class Polynomial
     }
 
     // Methods
-    
+
     /**
      * Method for finding the degree of the given polynomial.
      * @return Degree of the polynomial.
      */
     public int getDegree(){
         int degree = 0;
-        
+
         for( int index = 0; index < this.coefficient.length; index = index + 1 )
             if( this.coefficient[ index ] != 0 ) {
                 degree = index;
             }
-        
+
         return degree;
     }
-    
+
     /**
      * This method gets the coefficient with the wanted degree.
      * @param degree is the value of the wanted degree.
@@ -93,13 +93,13 @@ public class Polynomial
      * @return String representation of the given polynomial.
      */
     @Override
-    public String toString() { 
+    public String toString() {
         String polynomialString;
         polynomialString = "";
 
         String sign;
         sign = "";
-        
+
         for ( int index = 0; index < this.coefficient.length; index = index + 1 ) {
             if ( this.coefficient[ index ] < 0 ) {
                 sign = "-";
@@ -108,22 +108,22 @@ public class Polynomial
             else {
                 sign = "+";
             }
-            
+
             // Do not represent the term with coefficient 0.
             if ( this.coefficient[ index ] != 0 ) {
                 if ( index == 0 ) {
                     polynomialString = polynomialString + this.coefficient[ 0 ] + "";
                 }
 
-                else if ( index == 1 ) { 
+                else if ( index == 1 ) {
                     polynomialString = polynomialString + " " + sign + " " + Math.abs( this.coefficient[ 1 ] ) + "x";
                 }
-                
+
                 else {
                     polynomialString = polynomialString + " " + sign + " " + Math.abs( this.coefficient[ index ] ) + "x^" + index;
                 }
             }
-            
+
             // Exceptional case for the zero polynomial.
             else if ( this.getDegree() == 0 && this.coefficient[ 0 ] == 0 ) {
                 polynomialString = polynomialString + 0;
@@ -140,7 +140,7 @@ public class Polynomial
     public double eval( double x ) {
         double evaluation;
         evaluation = 0;
-        
+
         for ( int index = 0; index < this.coefficient.length; index = index + 1 ) {
             evaluation = evaluation + ( this.coefficient[ index ] * ( Math.pow( x, index ) ) );
         }
@@ -154,13 +154,13 @@ public class Polynomial
      * @return Evaluation result of the given terms which computed using Horner's method.
      */
     public double eval2( double x ) {
-        double evaluation = 0;   
-   
+        double evaluation = 0;
+
         for (int index = this.coefficient.length - 1; index >= 0; index = index - 1) {
             evaluation = ( evaluation * x ) + this.coefficient[ index ];
         }
 
-        return evaluation; 
+        return evaluation;
     }
 
     /**
@@ -170,17 +170,17 @@ public class Polynomial
      */
     public Polynomial add ( Polynomial p2 ) {
         Polynomial temp = new Polynomial( 0, Math.max( this.getDegree(), p2.getDegree() ) );
-        
+
         for( int index = 0; index <= this.getDegree(); index = index + 1 ) {
             temp.coefficient[ index ] = temp.coefficient[ index ] + this.coefficient[ index ];
         }
-        
+
         for( int index = 0; index <= p2.getDegree(); index = index + 1 ) {
             temp.coefficient[ index ] = temp.coefficient[ index ] + p2.coefficient[ index ];
         }
-        
+
         temp.degree = temp.getDegree();
-        
+
         return temp;
     }
 
@@ -191,17 +191,17 @@ public class Polynomial
      */
     public Polynomial sub ( Polynomial p2 ) {
         Polynomial temp = new Polynomial( 0, Math.max( this.getDegree(), p2.getDegree() ) );
-        
+
         for( int index = 0; index <= this.getDegree(); index = index + 1 ) {
             temp.coefficient[ index ] = temp.coefficient[ index ] + this.coefficient[ index ];
         }
-        
+
         for( int index = 0; index <= p2.getDegree(); index = index + 1 ) {
             temp.coefficient[ index ] = temp.coefficient[ index ] - p2.coefficient[ index ];
         }
-        
+
         temp.degree = temp.getDegree();
-        
+
         return temp;
     }
 
@@ -212,17 +212,17 @@ public class Polynomial
      */
     public Polynomial mul( Polynomial p2 ){
         Polynomial temp = new Polynomial( 0, this.getDegree() + p2.getDegree() );
-        
+
         for( int index = 0; index <= this.getDegree(); index = index + 1 ) {
-            
+
             for( int secondIndex = 0; secondIndex <= p2.getDegree(); secondIndex = secondIndex + 1 ) {
-                temp.coefficient[ index + secondIndex ] = temp.coefficient[ index + secondIndex ] 
+                temp.coefficient[ index + secondIndex ] = temp.coefficient[ index + secondIndex ]
                                   + ( this.coefficient[ index ] * p2.coefficient[ secondIndex ] );
             }
         }
-    
+
         temp.degree = temp.getDegree();
-        
+
         return temp;
     }
 
@@ -234,12 +234,12 @@ public class Polynomial
     public Polynomial compose( Polynomial p2 ) {
         Polynomial temp = new Polynomial();
         Polynomial term;
-        
+
         for ( int index = this.getDegree(); index >= 0; index = index - 1 ) {
             term = new Polynomial( this.coefficient[ index ], 0 );
             temp = term.add( p2.mul( temp ) ); // Similar way as how we used Horner's method before.
         }
-        
+
         return temp;
     }
 
@@ -266,10 +266,10 @@ public class Polynomial
             do {
                 tX = new Polynomial( ( pX.getCoefficient( pX.getDegree() ) / qX.getCoefficient( qX.getDegree() ) ),
                                      ( pX.getDegree() - qX.getDegree() ) );
-            
+
                 pX = ( pX.sub( ( qX.mul( tX ) ) ) );            /* P(x) - ( Q(x) * T(x) ) */
                 tXReturn = tXReturn.add( tX );
-                
+
                 } while ( pX.getDegree() >= qX.getDegree() );
         }
 

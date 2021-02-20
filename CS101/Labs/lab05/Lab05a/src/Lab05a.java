@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Wall with a hole generator
  * @author Berk Cakar // 22003021
  * @version 24.11.2020 -- syntax revised on 19.02.2021
- */ 
+ */
 public class Lab05a
 {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Lab05a
 
         // Variables
         String doItAgain;
-        
+
         int width;
         int height;
         int thickness;
@@ -46,18 +46,18 @@ public class Lab05a
                         System.out.print( "*" );
                     }
 
-                    //Skipping a line after every for loop completed. 
+                    //Skipping a line after every for loop completed.
                     System.out.println();
                 }
-            
+
                 System.out.println( "Oops... no hole!" );
             }
 
-            else { 
-                /* 
+            else {
+                /*
                  * Printing the rows until height value is reached.
                  *
-                 * I didn't initialized rows = rows + 1 there, because 
+                 * I didn't initialized rows = rows + 1 there, because
                  * rows variable needs to be updated in every while loop below.
                  * Otherwise it will loop to forever.
                  */
@@ -71,20 +71,20 @@ public class Lab05a
                         for ( columns = 1; columns <= width; columns = columns + 1 ) {
                             System.out.print( "*" );
                         }
-                        
+
                         rows = rows + 1;
-                        //Skipping a line after while loop completed. 
+                        //Skipping a line after while loop completed.
                         System.out.println();
                     }
 
                     /*
-                     * Printing the stars and empty characters that consist the "hole". 
-                     * For example if our width=10 height=10 thickness=3 this loop will 
+                     * Printing the stars and empty characters that consist the "hole".
+                     * For example if our width=10 height=10 thickness=3 this loop will
                      * arrange the shape of 4., 5., 6. and 7. rows.
                      */
                     while ( rows > thickness && rows <= height - thickness ) {
-                        /* 
-                         * I didn't initialized columns = columns + 1 there, because 
+                        /*
+                         * I didn't initialized columns = columns + 1 there, because
                          * columns variable needs to be updated in every while loop below.
                          * Otherwise it will loop forever.
                          */
@@ -92,7 +92,7 @@ public class Lab05a
                             //Printing the stars for left side of the hole.
                             while ( columns <= thickness  ) {
                                 System.out.print( "*" );
-                                columns = columns + 1;   
+                                columns = columns + 1;
                             }
 
                             //Inserting empty characters for the hole.
@@ -106,9 +106,9 @@ public class Lab05a
                                 System.out.print( "*" );
                                 columns = columns + 1;
                             }
-                        
+
                             rows = rows + 1;
-                            //Skipping a line after while loop completed. 
+                            //Skipping a line after while loop completed.
                             System.out.println();
                         }
                     }
@@ -123,7 +123,7 @@ public class Lab05a
                 }
             }
         } while ( doItAgain.equalsIgnoreCase( "y" ) );
-        
+
         scan.close();
     }
 }

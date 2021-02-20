@@ -13,7 +13,7 @@ public class PolynomialTester {
         // Program Code
         p2Array = new double[]{ 2, 4, 0, 7 };
         p3Array = new double[]{ 5, 8, 2, 3, 6 };
-        
+
         p1 = new Polynomial( 5, 3 );
         p2 = new Polynomial( p2Array );
         p3 = new Polynomial( p3Array );

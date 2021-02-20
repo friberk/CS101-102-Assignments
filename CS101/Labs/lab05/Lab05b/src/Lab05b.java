@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Lab05b assignment
  * @author Berk Cakar // 22003021
  * @version 25.11.2020 -- syntax revised on 19.02.2021
-*/ 
+*/
 public class Lab05b
 {
     public static void main(String[] args) {
@@ -16,22 +16,22 @@ public class Lab05b
         // variables
         int rowsInput;
         int columnsInput;
-        
+
         int rows;
         int columns;
 
         int cellSpaces;
-        
+
         int firstNumber;
 
         // program code
 
         System.out.print( "Enter the number of rows that you want to print: " );
         rowsInput = scan.nextInt();
-        
+
         System.out.print( "Enter the number of columns that you want to print: " );
         columnsInput = scan.nextInt();
-        
+
         if ( ( rowsInput <= 0 ) || ( columnsInput <= 0 ) ) {
             System.out.println( "All values must be positive!" );
         }
@@ -39,9 +39,9 @@ public class Lab05b
         else {
             //Loop for task 1
             System.out.println( "\n1. the row & column numbers as shown in the example" );
-            
+
             for ( rows = 1; rows <= rowsInput; rows = rows + 1 ) {
-                
+
                 for ( columns = 1; columns <= columnsInput; columns = columns + 1 ) {
                     //Inserting spaces for a proper looking table.
                     for ( cellSpaces = (rows + "," + columns).length(); cellSpaces <= CELL_WIDTH; cellSpaces = cellSpaces
@@ -68,7 +68,7 @@ public class Lab05b
                             .length() ); cellSpaces <= CELL_WIDTH; cellSpaces = cellSpaces + 1 ) {
                         System.out.print( " " );
                     }
-                    
+
                     System.out.print( rows * columns );
                 }
 
@@ -122,7 +122,7 @@ public class Lab05b
                     if ( columns == 1 ) {
                         System.out.print( rows );
                     }
-                    
+
                     else {
                         System.out.print( "-" );
                     }
@@ -130,14 +130,14 @@ public class Lab05b
                     if ( columns < columnsInput ) {
                         System.out.print( "," );
                     }
-                    
+
                 }
-            
+
                 //Skipping a line for every row completed.
                 System.out.println();
             }
         }
-    
+
         scan.close();
     }
 }
