@@ -60,8 +60,7 @@ For polynomials P(x) and Q(x), the result of the division operation, P(x) / Q(x)
 
 Result of ``P(x) / Q(x)`` is ``46 – 21x + 11x^2 – 4x^3 + 2x^4``. Note that remainder is ignored.
 
-3. Modify the  **PolynomialTester**  class from the first assignment to test your Polynomial
-    class for the above operations.
+3. Modify the  **PolynomialTester**  class from the first assignment to test your Polynomial class for the above operations.
 
 **IMPORTANT NOTES:**
 1. Please reuse the available methods as much as you can instead of repeating the
@@ -70,5 +69,3 @@ the polynomial for addition, you must use the method defined for this purpose. Y
 can implement subtraction by calling polynomial addition and multiplication methods
 instead of repeating the code of the add method. For the compose method, you must
 call the multiplication method repeatedly.
-
-
