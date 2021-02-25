@@ -16,7 +16,7 @@ Implement the following operations for
 * **mul( Polynomial p2 )**  **:**  Multiplies this polynomial (polynomial for which the method is called), and polynomial p2 and returns the result as a new polynomial.
 
 For polynomials P(x) and Q(x), the results of addition, subtraction and multiplication
-operations are:
+operations are: test
 
 ``P(x) = 3 + 4x + 5x^2 + 2x^3``
 ``Q(x) = 2 + 4x + 1x^2``
