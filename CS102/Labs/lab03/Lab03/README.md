@@ -43,4 +43,4 @@ Write a test class, ``ShapeTest``. Create **an array** of three shape objects: o
 
 * ``public static Shape2D findLongestPerimeter()`` - Write a method which takes an array of ``Shape2D`` objects as a parameter and returns the shape with the longest perimeter in the shape list.
 
-Demonstrate the uses of your ``toString()`` and ``equals()`` methods from these classes. Also, calculate the distances between these three Shape2D objects.
+Demonstrate the uses of your ``toString()`` and ``equals()`` methods from these classes. Also, calculate the distances between these three ``Shape2D`` objects.
