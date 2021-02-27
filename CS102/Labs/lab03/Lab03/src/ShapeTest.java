@@ -40,6 +40,7 @@ public class ShapeTest {
 
         return maxPerimeter;
     }
+    
     public static void main(String[] args) {
         // Variables
         Circle circle = new Circle( 13, 15, 7 );
