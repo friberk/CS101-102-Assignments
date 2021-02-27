@@ -1,4 +1,4 @@
-# CS102- Algorithms and Programming II
+# CS102 - Algorithms and Programming II
 
 ## Lab 02
 

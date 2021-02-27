@@ -1,4 +1,4 @@
-# CS102- Algorithms and Programming II
+# CS102 - Algorithms and Programming II
 
 ## Lab 01
 
@@ -18,8 +18,8 @@ The class should do the following:
 1. ``Polynomial`` class should contain its coefficients in an array. Use double type for
     coefficients.
 2. Include a constructor that takes an integer, ``d``, and a double, ``c``, to construct
-    polynomials of the form ``P(x) = cx^d``.  
-    
+    polynomials of the form ``P(x) = cx^d``.
+
     Include a default constructor that takes no argument and constructs a zero polynomial (``P(x) = 0``).
 
 3. Include another constructor that takes an array of coefficients and produces a
@@ -38,7 +38,7 @@ The class should do the following:
 
 7. Add  **eval( double x )** method that evaluates the polynomial at x and returns
     the result.
-    
+
     1. Use ``Math.pow( double a, double b )`` method to evaluate each term individually and the polynomial as a sum of the terms.
 
     2. Implement another method,  **eval2( double x )**  that evaluates the
