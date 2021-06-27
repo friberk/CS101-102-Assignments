@@ -1,0 +1,3 @@
+### (b) Validating user input
+
+Last week, Lab02d asked you to calculate the number of flowers that could be planted in a triangular garden. You probably assumed that whatever values the user entered for the lengths of the sides of the garden, did actually form a triangle, but obviously that may not be the case! Make a copy of your solution to Lab02d, placing it into a new project, Lab03b. Next, add the code necessary to check whether the values entered do indeed form a triangle. To do this, use the triangle inequality theorem: "any side of a triangle is always shorter than the sum of the other two sides". Print a warning message and stop if the values are invalid.

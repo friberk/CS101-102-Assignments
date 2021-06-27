@@ -1,4 +1,4 @@
- **Lab No. 5  - More Repetition...**
+**Lab No. 5  - More Repetition...**
 
 Fall 2020/2021
 
@@ -9,10 +9,10 @@ Now you have had some practice using ***while*** statements to do repetition in 
 The basic syntax for the _**for**_ loop is:
 
 ```java 
-	    for ( init; condition; update )
-            {
-            statement;
-            }
+for ( init; condition; update )
+{
+    statement;
+}
 ```
 
 _where **init** is an assignment statement that initialises variables in the condition,_  
@@ -29,10 +29,10 @@ _Note:_ Layout of the _for_ statement is exactly the same as the _if & while_ st
 The basic syntax for the _**_do-while_**_ loop is:
 
 ```java
-            do
-            {
-            statement;
-            } while ( condition );
+do
+{
+    statement;
+} while ( condition );
 ```
 
 _where **condition** is any boolean expression,_  
@@ -101,9 +101,9 @@ Once this is working, modify your program so that, after outputting the pattern,
 **(b) Design** and implement a Java program that will ask the user for the required number of rows and columns, and then generate a neatly laid out table, with each cell indicating the _"row_,_col"_ values, as in the following example (a table having 3 rows and 4 columns):
 
 ```
-   1,1   1,2   1,3   1,4
-   2,1   2,2   2,3   2,4
-   3,1   3,2   3,3   3,4
+1,1   1,2   1,3   1,4
+2,1   2,2   2,3   2,4
+3,1   3,2   3,3   3,4
 ```
 
 Notice that each cell's contents are aligned to the right of a 6 character wide cell. That is, each column in the table is 6 characters wide (in the example, the first 3 characters are spaces, followed by one character for the row digit, another character for the comma, and finally another character for the column digit); if we were to use "stars" instead of the spaces, you would see:  

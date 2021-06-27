@@ -1,6 +1,6 @@
- **Lab No. 4  - Repetition while...**
+**Lab No. 4  - Repetition while...**
 
- Fall 2020/2021
+Fall 2020/2021
 
 ### Introduction
 
@@ -10,10 +10,10 @@ Java has three forms of repetition (loop) statement: ***while***, ***for*** and 
 
 The basic syntax for the _while_ loop is:
 ```java
-			while ( condition )
-			{
-			   statement;
-			}
+while ( condition )
+{
+	statement;
+}
 ```
   *where **condition** _is any boolean expression (exactly the same as in the_ **if** _statement),  
 and_ **statement** _is any Java statement, including compound statements._*
@@ -66,24 +66,26 @@ Create another project, Lab04c, and write a program that finds the average, mini
 Create another project and try the following tasks:
 
 1.  Prompt the user to enter a character, ***ch***, and an int value, ***width***, and then print out a triangle formed using ***ch*** characters having a base of ***width*** characters. For example, if the user enters "*" and 5, it should print,
-    
-				*
-				**
-				***
-				****
-				*****
+
+	```
+	*
+	**
+	***
+	****
+	*****
+	```
     
 2.  Can you predict what the following code will print out?
     
     ```java
-			double d;
-			d = 0.1;
-			while ( d != 1.0 )
-			{
-			   System.out.println( d);
-		           d = d + 0.1;
-			}
-			System.out.println( d + " <- final value after loop!");
+	double d;
+	d = 0.1;
+	while ( d != 1.0 )
+	{
+		System.out.println( d);
+			d = d + 0.1;
+	}
+	System.out.println( d + " <- final value after loop!");
     ```
     
     Copy-paste it into your IDE and run it to check your prediction.

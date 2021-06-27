@@ -1,7 +1,7 @@
 
- **Lab No.2  - Using Java to solve simple problems!**
+**Lab No.2  - Using Java to solve simple problems!**
 
- Fall 2020/2021
+Fall 2020/2021
 
 ### Introduction
 
@@ -31,7 +31,7 @@ Try to solve any problems you run into by yourself, but if, after spending a rea
 Declare **variable**s using the syntax:
 
 ```java
-            type name;
+type name;
 ```
 
 *where **type** is any Java type (e.g. int, double, char, boolean, String) and **name** is the desired name of the memory location (a Java identifier). Examples, int age;  double radius; char letterGrade; String userName;*  
@@ -39,7 +39,7 @@ Declare **variable**s using the syntax:
 Declare **constant**s using the syntax:
 
 ```java
-            final type name = value;
+final type name = value;
 ```
 
 *where **type** and **name** are the same as for variables, and **value**  is a literal value of the same type. Examples, final double PI = 3.142; final int SPEED\_OF\_LIGHT = 300; final String WELCOME = "Hello and welcome.";*  
@@ -47,19 +47,19 @@ Declare **constant**s using the syntax:
 The basic syntax for an **output** statement is:
 
 ```java
-            System.out.print( output );    // prints output and remains on same line  
-            System.out.println( output );  // prints output and moves to next line
-            System.out.println();          // moves to next line
+System.out.print( output );    // prints output and remains on same line  
+System.out.println( output );  // prints output and moves to next line
+System.out.println();          // moves to next line
 ```
 
 *where **output** is either a literal value (i.e. a numeric value, a character between single quotes, or any text between double quotation marks), or the name of a variable or constant. Examples, System.out.print( 21 ); System.out.println( "Welcome" ); System.out.println( age );*
 
 The basic syntax for an **input** statement is:
 ```java
-            variable = scan.nextInt();     // reads int value
-            variable = scan.nextDouble();  // reads double value
-            variable = scan.next();        // reads single word (String)
-            variable = scan.nextLine();    // reads entire line(String)
+variable = scan.nextInt();     // reads int value
+variable = scan.nextDouble();  // reads double value
+variable = scan.next();        // reads single word (String)
+variable = scan.nextLine();    // reads entire line(String)
 ```
 
 _where ***variable*** is a memory location of the appropriate type! Examples, age = scan.nextInt(); radius = scan.nextDouble(); userName = scan.nextLine() ;_
@@ -67,35 +67,35 @@ _where ***variable*** is a memory location of the appropriate type! Examples, ag
 The basic syntax for an **assignment** statement is:
 
 ```java
-            variable = expression;
+variable = expression;
 ```
 
 *_where_ **variable** _is a named memory location of suitable type, and_ **expression** _is either an operand (a literal value, a variable, or a constant), or a method/function call, or "operand operator operand", (where operator is +, -, \*, / or %). Examples, age = 21;_ _y_ _\= Math.sqrt( x );_ _area = 2 \* PI \* radius_ _;_*
 
  The basic syntax for a **program** is:  
 ```java
-            import java.util.Scanner;
+import java.util.Scanner;
 
-            /**
-             * ___program description___
-             * @author ___your name___
-	     * @version ___date___
-             */ 
-            public class XXXX
-            {
-               public static void main( String\[\] args)
-               {
-                  Scanner scan = new Scanner( System.in);
+/**
+ * ___program description___
+   * @author ___your name___
+   * @version ___date___
+   */ 
+public class XXXX
+{
+   public static void main( String\[\] args)
+   {
+      Scanner scan = new Scanner( System.in);
 
-                  // constants
+      // constants
 
-                  // variables
+      // variables
 
-                  // program code
-              
-               }
+      // program code
+   
+   }
 
-            } // end class      
+} // end class      
   ```
 
 _where_ **XXXX** _is the name you give to your program (and the file containing it must be named XXXX.java ). Complete the **program description** , **your name** and the **date**. Add your constants, variables & the program code below the corresponding comments and at the same indentation!_

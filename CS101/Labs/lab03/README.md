@@ -1,6 +1,6 @@
- **Lab No. 3  - Decisions, decisions...**
+**Lab No. 3  - Decisions, decisions...**
 
- Fall 2020/2021
+Fall 2020/2021
 
 ### Introduction
 
@@ -9,14 +9,14 @@ The previous lab focused on creating, compiling, running & debugging a Java prog
 The basic syntax for the _if_ statement is:
 
 ```java
-            if ( condition )
-            {
-               statementT;
-            }
-            else
-            {
-               statementF;
-            }
+if ( condition )
+{
+    statementT;
+}
+else
+{
+    statementF;
+}
 ```
 *where **condition** _is any expression that evaluates to a boolean result,  
 and_ **statement** _is any Java statement, including compound statements._*
@@ -34,10 +34,10 @@ Each of the following tasks should be done in a separate project within your lab
 The following exercise should help get you up to speed using simple Java _if_ statements. Start by creating a new project, and then copy-paste the following _for_ loop statement into the body of its main method. You are not expected to understand the loop yet, you will simply use it to automatically generate values of the variable **x** from 0 to +50 so you can test out your _if_ statements. Inside the loop (where it says "// your code goes here"), add a statement that prints the value of the variable **x**, then compile and run the program to see this.
 
 ```java
-             for ( int x = 0; x <= 50; x++ )  
-             {  
-                 // your code goes here  
-             }
+for ( int x = 0; x <= 50; x++ )  
+{  
+    // your code goes here  
+}
 ```
 
 Once you have this working, insert an _if_ statement into the body of the loop so that:
@@ -80,8 +80,8 @@ Of course, some employees may not have pictures available, in which case the com
 _Note:_ You don't need to understand the above method call, however, you will need to include the following magic right at the top of your program (immediately after the existing ``import java.util.Scanner;`` statement) in order for it to work:
 
 ```java
-            import java.nio.file.*;    
-            import java.io.*;
+import java.nio.file.*;    
+import java.io.*;
 ```
 * * *
 
@@ -90,12 +90,12 @@ _Note:_ You don't need to understand the above method call, however, you will ne
 Add " throws FileNotFoundException" to the end of the main method definition line, so it says,
 
 ```java
-            public static void main( String[] args) throws FileNotFoundException
+public static void main( String[] args) throws FileNotFoundException
 ```
 Immediately following the ``Scanner scan = new Scanner( System.in);`` statement, add the command
 
 ```java
-            PrintStream originalStdOut = System.out;
+PrintStream originalStdOut = System.out;
 ```
 
 Next, restore the user-friendly prompts (remember... the ones you commented out last week so they didn't mess up the html, but which then made the program very difficult for the company secretary to use).
@@ -103,15 +103,15 @@ Next, restore the user-friendly prompts (remember... the ones you commented out 
 Then, after getting all the required data from the user and before starting to output it in html form (using ``System.out.println`` statements), add the following,
 
 ```java
-            System.setOut( new PrintStream( "magic.htm" ) );
+System.setOut( new PrintStream( "magic.htm" ) );
 ```
 
 Finally, after printing the closing html tag (and before the end of the main method), add the following,
 
 ```java
-            System.out.close();  
-            System.setOut( originalStdOut);  
-            System.out.println( "Webpage created.");
+System.out.close();  
+System.setOut( originalStdOut);  
+System.out.println( "Webpage created.");
 ```
 
 Save, compile & run your program from within the IDE. It should ask for the employee information and then automatically create the html webpage file, all without you ever needing to use the CommandPrompt; try opening the "magic.htm" file in a browser to make sure. Assuming the magic worked, everyone will be very impressed and the company secretary will be especially happy!
