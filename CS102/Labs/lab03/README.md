@@ -1,3 +1,16 @@
+# CS102 - Algorithms and Programming II
+
+## Lab 03
+
+**Lab Objectives:** Inheritance, Abstract Classes, Polymorphism
+
+Notes:
+* For all labs in CS 102, your solutions must conform to these [CS101/102 style
+guidelines](http://www.cs.bilkent.edu.tr/~adayanik/cs101/practicalwork/styleguidelines.htm).
+* Create a Java Project named Lab03. Put all of your classes in this project.
+* Remember to include **javadoc comments** for each class and method.
+* Upload your solution as a single .zip file to the Lab03 assignment by the end of your section’s lab session in the week of March 1. You must use the following naming convention: Lab03_Surname_FirstName.zip where Surname is your family name and FirstName is your first name. You may upload multiple times; the last upload will be considered.
+
 Create an abstract class called ``Shape2D``. A 2D shape has two properties: x and y coordinates of its center. Its constructor takes two parameters: x and y coordinates.You may assume that both coordinates are integers.
 
 This class has the following methods:

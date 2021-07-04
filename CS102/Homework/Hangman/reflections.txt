@@ -1,0 +1,10 @@
+CS102 - Section 2
+Name & ID: Berk Çakar (22003021)
+Date: 13.02.2021
+Estimate of the time spent on this exercise: Approximately 2 hours.
+Status: Working
+
+That group work code pieces was generally well thought out, still there was some exceptions or problems when it comes to express ideas in Java. 
+Thus, I spent most of my time to fix these poorly written codes/JavaDoc comments. I rewrote half of the methods (e.g tryThis, hasGameLost...) in a more convenient way. 
+In addition to this, I implemented to read & get secretWord from a text file. I really liked one group's main method and I used it almost directly. 
+While performing all these operations, I did not encounter any major bugs or Java errors. On the other hand, this exercise really gave me an idea of what teamwork in business life would look like.

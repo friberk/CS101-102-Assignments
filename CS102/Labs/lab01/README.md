@@ -1,3 +1,16 @@
+# CS102 - Algorithms and Programming II
+
+## Lab 01
+
+### **Lab Objectives:** Arrays
+
+Notes:
+* For all labs in CS 102, your solutions must conform to these [CS101/102 style
+guidelines](http://www.cs.bilkent.edu.tr/~adayanik/cs101/practicalwork/styleguidelines.htm).
+* Create a Java Project named Lab01. Put all of your classes in this project.
+* Remember to include **javadoc comments** for each class and method.
+* Upload your solution **as a single .zip file** to the Lab01 assignment for your section by the end of your section’s lab session on the week of February 8. You must use the following naming convention: Lab01_Surname_FirstName.zip where Surname is your family name and FirstName is your first name. You may upload multiple times; the last upload will be considered.
+
 **Question** In this lab, you are going to implement a **Polynomial** class that represents
 polynomials of the form ``P(x) = c0 + c1x + c2x^2 + ... + cnx^n``
 The class should do the following:
